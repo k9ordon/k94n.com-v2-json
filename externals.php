@@ -1,12 +1,13 @@
 <?
 
 class Externals {
-	public function getLastfmTopArtists($count = 1) {
+	public function getLastfmTopArtists($count = 1, $random = false) {
 		$apiUrl = "http://ws.audioscrobbler.com/2.0/user/mracidfreak/weeklyartistchart.xml";
 		$xml = simplexml_load_file($apiUrl);
 		$array = json_decode(json_encode($xml), TRUE);
 
-		$artists = $array['artist'];
+		$artists = array_slice($array['artist'], 0, $count * 3);
+		if($random) shuffle($artists);
 		return array_slice($artists, 0, $count);
 	}
 

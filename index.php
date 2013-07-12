@@ -8,7 +8,7 @@
 	// bootstrap apis
 	$externals = new Externals();
 
-	$artists = $externals->getLastfmTopArtists(1);
+	$artists = $externals->getLastfmTopArtists(1, true);
 	$jawbone = $externals->getJawboneYesterday();
 
 	// render
