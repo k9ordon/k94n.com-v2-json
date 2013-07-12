@@ -153,7 +153,7 @@ a {
   border-bottom: 4px solid gray;
 }
 .wrap {
-  max-width: 1440px;
+  max-width: 100%;
   margin: 0 auto;
 }
 h1,
@@ -164,6 +164,31 @@ h3 {
   line-height: 62.400000000000006px !important;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+@media all and (min-width: 1440px) {
+  h1,
+  h2,
+  h3 {
+    font-size: 81px;
+    line-height: 93.60000000000001px !important;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+@media all and (max-width: 640px) {
+  h1,
+  h2,
+  h3 {
+    font-size: 24px;
+    line-height: 31.200000000000003px !important;
+    margin-top: 0px;
+    margin-bottom: 31.200000000000003px;
+  }
+  h1 span,
+  h2 span,
+  h3 span {
+    display: block;
+  }
 }
 h1 {
   color: #f92672;

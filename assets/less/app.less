@@ -1,5 +1,5 @@
 // config
-@page-width: 1440px;
+@page-width: 100%;
 @body-font-size : 24px;
 @body-line-height : 1.3;
 @scale-factor : 1.680;
@@ -58,6 +58,17 @@ a {
 h1, h2, h3 {
 	font-weight: @font-weight;
 	.rhythm(1,0,0);
+
+	@media all and (min-width: 1440px) {
+		.rhythm(2,0,0);
+	}
+
+	@media all and (max-width: 640px) {
+		span {
+			display: block;
+		}
+		.rhythm(0,0,1);
+	}
 }
 
 h1 {
