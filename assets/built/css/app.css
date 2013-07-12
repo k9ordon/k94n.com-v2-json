@@ -190,6 +190,11 @@ h3 {
     display: block;
   }
 }
+h1 a,
+h2 a,
+h3 a {
+  white-space: nowrap;
+}
 h1 {
   color: #f92672;
 }
