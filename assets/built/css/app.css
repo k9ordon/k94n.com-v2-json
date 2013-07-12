@@ -201,3 +201,9 @@ h3 a {
   margin-top: 62.400000000000006px;
   margin-bottom: 0px;
 }
+#footprint p {
+  font-size: 24px;
+  line-height: 31.200000000000003px !important;
+  margin-top: 0px;
+  margin-bottom: 31.200000000000003px;
+}
