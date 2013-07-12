@@ -1,0 +1,80 @@
+// config
+@page-width: 1440px;
+@body-font-size : 24px;
+@body-line-height : 1.3;
+@scale-factor : 1.680;
+@background-color: #272822;
+@font-weight: 700;
+
+@color1: #F92672;
+@color2: #66D9EF;
+@color3: #A6E22E;
+@color4: #FD971F;
+@color5: #71716F;
+
+// app
+@import "../vendor/reset";
+@import "../vendor/gridlover-less/rhythm.less";
+
+// externals
+@import url(http://fonts.googleapis.com/css?family=Raleway:700);
+
+// mixins
+.colorize(@color) {
+	color: @color;
+	a {
+		color: @color;
+		border-color:darken(@color, 20%);
+	}
+}
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background-color:@background-color;
+
+	padding:0 20px;
+	.rhythm-padding(1, 2, 1);
+	.vgrid(lighten(@background-color, 2%));
+
+	.colorize(@color5);
+	font-family: 'Raleway', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	border-bottom:4px solid gray;
+}
+
+.wrap {
+	max-width: @page-width;
+	margin:0 auto;
+}
+
+h1, h2, h3 {
+	font-weight: @font-weight;
+	.rhythm(1,0,0);
+}
+
+h1 {
+	.colorize(@color1);
+	span {
+		.colorize(@color4);
+	}
+}
+
+h2, h3 {
+	.colorize(@color2);
+}
+
+h3 {
+	.colorize(@color3);
+}
+
+#footprint {
+	.rhythm(0,2,0);
+}
