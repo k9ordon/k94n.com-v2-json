@@ -9,6 +9,7 @@
 	$externals = new Externals();
 
 	$artists = $externals->getLastfmTopArtists(1);
+	$jawbone = $externals->getJawboneYesterday();
 
 	// render
 	include "view.php";
