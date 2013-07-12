@@ -24,7 +24,7 @@
 
 		<div id="footprint">
 			<p>I push code to <a href="http://github.com/k9ordon">github</a>, talk on <a href="http://twitter.com/thisisgordon">twitter</a> and bookmark at <a href="http://delicious.com/k9ordon">delicious</a>.</p>
-			<p>Need code? Ninja is ready <a href="mailto:hello@k94n.com">hello@k94n.com</a>.</p>
+			<? /*<p>Need code? Ninja is ready <a href="mailto:hello@k94n.com">hello@k94n.com</a>.</p> */ ?>
 		</div>
 	</div>
 
