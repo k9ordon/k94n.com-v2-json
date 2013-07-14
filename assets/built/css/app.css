@@ -143,6 +143,13 @@ body {
   background-position: top left;
   color: #71716f;
   font-family: 'Raleway', sans-serif;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: moz-none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
 }
 body a {
   color: #71716f;
@@ -151,6 +158,9 @@ body a {
 a {
   text-decoration: none;
   border-bottom: 4px solid gray;
+}
+a.info {
+  cursor: help;
 }
 .wrap {
   max-width: 100%;
