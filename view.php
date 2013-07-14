@@ -20,7 +20,7 @@
 		<h2>I am a webdeveloper with love for interfaces.</h2>
 		<h3>I currently code at <a href="http://dev.karriere.at">karriere.at</a>.</h3>
 		<h3>I enjoy music from <a href="<?=$artists[0]['url']?>"><?=$artists[0]['name']?></a>.</h3>
-		<h3>I moved <?=$jawbone['steps']?> steps yesterday.</h3>
+		<h3 title="Recorded with Jawbone UP">I moved <?=$jawbone['steps']?> steps yesterday.</h3>
 
 		<div id="footprint">
 			<p>I push code to <a href="http://github.com/k9ordon">github</a>, talk on <a href="http://twitter.com/thisisgordon">twitter</a> and share on <a href="http://open.spotify.com/user/13thmonkeys">spotify</a>.</p>
