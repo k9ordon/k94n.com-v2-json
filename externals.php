@@ -40,7 +40,7 @@ class Externals {
 	}
 
 	public function getJawboneYesterday() {
-		$key = "0AkQg6lNBHx7mdDJQVGVyajNHdzBxcWFfMkxsR3p6aXc";
+		$key = "0AiB4iL9awu48dGFGOXAtVE9JRjVLSjJhWHFjbTktOEE";
 		$apiUrl = "http://spreadsheets.google.com/feeds/list/".$key."/od6/public/values?alt=json";
 
 		$json = json_decode($this->cachedApiFile($apiUrl), true);
