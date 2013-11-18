@@ -22,7 +22,7 @@
 		<h3>I enjoy music from <a href="<?=$artists[0]['url']?>"><?=$artists[0]['name']?></a>.</h3>
 
 		<div id="footprint">
-			<p>I push code to <a href="http://github.com/k9ordon">github</a>, talk on <a href="http://twitter.com/thisisgordon">twitter</a> and share on <a href="http://open.spotify.com/user/13thmonkeys">spotify</a>.</p>
+			<p>I push code to <a href="http://resume.github.io/?k9ordon">github</a>, talk on <a href="http://twitter.com/thisisgordon">twitter</a> and share on <a href="http://open.spotify.com/user/13thmonkeys">spotify</a>.</p>
 			<p>Need code? Ninja is ready <a href="mailto:hello@k94n.com">hello@k94n.com</a>.</p>
 		</div>
 	</div>
