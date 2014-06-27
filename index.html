@@ -32,6 +32,8 @@
 	body {
 		margin:0; padding:2%;
 		background-color:#fff;
+
+		-webkit-perspective: 600px;
 		perspective: 600px;
 	}
 	pre {
@@ -42,17 +44,21 @@
 		white-space: pre-wrap;
 		outline: none;
 
-		-webkit-transition: opacity 1s, transform 0.2s;
+		-webkit-transition: opacity 1s, -webkit-transform 0.2s;
     	transition: opacity 1s, transform 0.2s;
 
 		opacity:0;
 
+		-webkit-transform-origin: top center;
 		transform-origin: top center;
+		-webkit-transform: rotateX(-10deg);
 		transform: rotateX(-10deg);
 	}
 
 	body.ready pre {
 		opacity:1;
+
+		-webkit-transform: rotateX(0deg);
 		transform: rotateX(0deg);
 	}
 
